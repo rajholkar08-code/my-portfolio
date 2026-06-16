@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>High Fidelity Portfolio Wireframe</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Inter',sans-serif;
+}
+
+body{
+    background:#f5f5f5;
+    color:#222;
+}
+
+.container{
+    width:90%;
+    max-width:1300px;
+    margin:auto;
+}
+
+/* NAVBAR */
+
+nav{
+    background:#fff;
+    padding:20px 0;
+    position:sticky;
+    top:0;
+    border-bottom:1px solid #ddd;
+}
+
+.nav-content{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.logo{
+    font-size:24px;
+    font-weight:700;
+}
+
+.menu{
+    display:flex;
+    gap:30px;
+}
+
+.menu a{
+    text-decoration:none;
+    color:#333;
+    font-weight:500;
+}
+
+/* HERO */
+
+.hero{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    gap:50px;
+    min-height:90vh;
+}
+
+.hero-text{
+    flex:1;
+}
+
+.tag{
+    display:inline-block;
+    padding:8px 16px;
+    border:1px solid #bbb;
+    border-radius:20px;
+    margin-bottom:20px;
+}
+
+.hero h1{
+    font-size:60px;
+    margin-bottom:15px;
+}
+
+.hero p{
+    color:#666;
+    line-height:1.8;
+    max-width:600px;
+}
+
+.buttons{
+    margin-top:30px;
+    display:flex;
+    gap:15px;
+}
+
+.btn{
+    padding:14px 28px;
+    border-radius:8px;
+    border:none;
+    cursor:pointer;
+    font-size:15px;
+}
+
+.primary{
+    background:#222;
+    color:white;
+}
+
+.secondary{
+    background:white;
+    border:1px solid #ccc;
+}
+
+.hero-image{
+    width:350px;
+    height:350px;
+    background:#e8e8e8;
+    border-radius:20px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-size:18px;
+}
+
+/* SECTION */
+
+section{
+    padding:100px 0;
+}
+
+.section-title{
+    text-align:center;
+    font-size:40px;
+    margin-bottom:50px;
+}
+
+/* ABOUT */
+
+.about-box{
+    background:white;
+    padding:40px;
+    border-radius:20px;
+    line-height:1.8;
+}
+
+/* SKILLS */
+
+.skills{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
+    gap:20px;
+}
+
+.skill{
+    background:white;
+    padding:25px;
+    text-align:center;
+    border-radius:15px;
+    font-weight:600;
+}
+
+/* PROJECTS */
+
+.projects{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+    gap:25px;
+}
+
+.project-card{
+    background:white;
+    border-radius:20px;
+    overflow:hidden;
+}
+
+.project-image{
+    height:220px;
+    background:#e6e6e6;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.project-content{
+    padding:25px;
+}
+
+.project-content h3{
+    margin-bottom:10px;
+}
+
+.project-content p{
+    color:#666;
+}
+
+/* EDUCATION */
+
+.timeline{
+    display:flex;
+    flex-direction:column;
+    gap:20px;
+}
+
+.timeline-card{
+    background:white;
+    padding:25px;
+    border-radius:15px;
+}
+
+/* CONTACT */
+
+.contact{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:30px;
+}
+
+.contact-info{
+    background:white;
+    padding:30px;
+    border-radius:20px;
+}
+
+.contact-form{
+    background:white;
+    padding:30px;
+    border-radius:20px;
+}
+
+input, textarea{
+    width:100%;
+    padding:15px;
+    margin-bottom:15px;
+    border:1px solid #ddd;
+    border-radius:8px;
+}
+
+textarea{
+    resize:none;
+    height:120px;
+}
+
+/* FOOTER */
+
+footer{
+    background:#fff;
+    text-align:center;
+    padding:30px;
+    margin-top:50px;
+    border-top:1px solid #ddd;
+}
+
+.socials{
+    margin-bottom:15px;
+}
+
+.socials span{
+    margin:0 10px;
+}
+
+@media(max-width:900px){
+
+.hero{
+    flex-direction:column;
+    text-align:center;
+    padding-top:50px;
+}
+
+.contact{
+    grid-template-columns:1fr;
+}
+
+.hero h1{
+    font-size:42px;
+}
+}
+</style>
+</head>
+
+<body>
+
+<nav>
+    <div class="container nav-content">
+        <div class="logo">PORTFOLIO</div>
+
+        <div class="menu">
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Skills</a>
+            <a href="#">Projects</a>
+            <a href="#">Contact</a>
+        </div>
+    </div>
+</nav>
+
+<div class="container">
+
+    <section class="hero">
+
+        <div class="hero-text">
+            <div class="tag">Portfolio Wireframe</div>
+
+            <h1>Hi, I'm Raju</h1>
+
+            <p>
+                Full Stack Developer passionate about creating modern web applications,
+                cloud solutions and user-friendly digital experiences.
+            </p>
+
+            <div class="buttons">
+                <button class="btn primary">Hire Me</button>
+                <button class="btn secondary">Download CV</button>
+            </div>
+        </div>
+
+        <div class="hero-image">
+            Profile Image Placeholder
+        </div>
+
+    </section>
+
+    <section>
+
+        <h2 class="section-title">About Me</h2>
+
+        <div class="about-box">
+            Write a short professional introduction here. Describe your background,
+            interests, education, achievements and career goals.
+        </div>
+
+    </section>
+
+    <section>
+
+        <h2 class="section-title">Skills</h2>
+
+        <div class="skills">
+            <div class="skill">Python</div>
+            <div class="skill">SQL</div>
+            <div class="skill">HTML</div>
+            <div class="skill">CSS</div>
+            <div class="skill">JavaScript</div>
+            <div class="skill">React</div>
+            <div class="skill">Azure</div>
+            <div class="skill">Figma</div>
+        </div>
+
+    </section>
+
+    <section>
+
+        <h2 class="section-title">Featured Projects</h2>
+
+        <div class="projects">
+
+            <div class="project-card">
+                <div class="project-image">Project Image</div>
+                <div class="project-content">
+                    <h3>Project One</h3>
+                    <p>Project description placeholder.</p>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="project-image">Project Image</div>
+                <div class="project-content">
+                    <h3>Project Two</h3>
+                    <p>Project description placeholder.</p>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="project-image">Project Image</div>
+                <div class="project-content">
+                    <h3>Project Three</h3>
+                    <p>Project description placeholder.</p>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+    <section>
+
+        <h2 class="section-title">Education & Certifications</h2>
+
+        <div class="timeline">
+
+            <div class="timeline-card">
+                Bachelor Degree Placeholder
+            </div>
+
+            <div class="timeline-card">
+                Certification Placeholder
+            </div>
+
+            <div class="timeline-card">
+                Internship / Training Placeholder
+            </div>
+
+        </div>
+
+    </section>
+
+    <section>
+
+        <h2 class="section-title">Contact Me</h2>
+
+        <div class="contact">
+
+            <div class="contact-info">
+                <h3>Get In Touch</h3>
+                <br>
+                <p>Email: yourmail@example.com</p>
+                <br>
+                <p>Phone: +91 XXXXX XXXXX</p>
+                <br>
+                <p>Location: Your City</p>
+            </div>
+
+            <div class="contact-form">
+
+                <input type="text" placeholder="Your Name">
+
+                <input type="email" placeholder="Your Email">
+
+                <textarea placeholder="Your Message"></textarea>
+
+                <button class="btn primary">Send Message</button>
+
+            </div>
+
+        </div>
+
+    </section>
+
+</div>
+
+<footer>
+
+    <div class="socials">
+        <span>LinkedIn</span>
+        <span>GitHub</span>
+        <span>Instagram</span>
+    </div>
+
+    <p>© 2026 Portfolio Wireframe</p>
+
+</footer>
+
+</body>
+</html>
